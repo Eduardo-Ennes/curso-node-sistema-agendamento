@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <form action="/create" method="POST" class="form-contein">
+        <h1>Agendamento de consultas</h1>
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome" class="text" required>
+
+        <label for="">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite o seu email" class="text" required>
+
+        <label for="">Descrição</label>
+        <input type="text" name="description" id="description" placeholder="Descreva o que você está sentindo?" class="text" required>
+
+        <div class="contein-date">
+            <div>
+                <label for="">Data:</label>
+                <input type="date" name="date" id="date" class="date">
+            </div>
+            <div>
+                <label for="">Horário: </label>
+                <input type="time" name="time" id="time" class="date">
+            </div>
+        </div>
+
+        <button class="btn">Confimar</button>
+    </form>
+</body>
+</html>

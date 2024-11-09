@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/appointment.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contein">
+        <h1 class="h1-c">Informações do paciente</h1>
+        <ul class="ul-c">
+            <li>Nome: <%= user._id %></li>
+            <li>E-mail: <%= user.email %></li>
+            <li>Descrição: <%= user.description %></li>
+            <div class="div-t">
+                <li>Data: <%= user.date %></li>
+                <li>Horario: <%= user.time %></li>
+            </div>
+            <% if (user.finished == true) {%>
+                <li>Status: <%= user.finished %></li>
+            <% } else{%>
+                <li>Status: Consulta não realizada %></li>
+            <% }%>
+            <form action="/finished/<%= user._id %>" method="POST">
+                <button>Consulta realizada</button>
+            </form>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.form-contein{
+    margin: 5rem auto 5rem auto;
+    border-radius: 1rem;
+    max-width: 100rem;
+    min-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+
+.text{
+    padding: 1rem;
+}
+
+
+label{
+    font-size: 1.8rem;
+}
+
+
+.contein-date{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.text{
+    border: none;
+    border-radius: 1rem;
+}
+
+.date{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.btn{
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    background-color: rgb(101, 241, 101);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/list">Voltar para a lista princial</a>
+    <form action="/search" method="GET">
+        <input type="search" name="search" id="search" placeholder="Digite o email ou o nome do paciente">
+        <button>Pesquisar</button>
+    </form>
+    <hr>
+    <% users.forEach(user => { %>
+        <h3>Descrição: <%= user.description %></h3>
+        <p>Name: <%= user.name %></p>
+        <p>E-mail: <%= user.email %></p>
+        <p>Data: <%= user.date %></p>
+        <p>Time: <%= user.time %></p>
+        <% if(user.finished == true) {%>
+            <p>Status: Consulta realizada</p> 
+        <% } else {%>
+            <p>Status: Consulta pendente</p>
+        <% }%>
+        <hr>
+    <% }) %>
+</body>
+</html>
